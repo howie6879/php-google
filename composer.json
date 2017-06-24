@@ -9,6 +9,7 @@
     "crawler"
   ],
   "homepage": "https://github.com/howie6879/php-google",
+  "license": "MIT",
   "authors": [
     {
       "name": "howie.hu",
