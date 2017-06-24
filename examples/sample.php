@@ -1,29 +1,12 @@
-# phpGoogle
-This is an easy Google Seraching crawler that you can get anything you want in the page by using it.
-
-During the process of  crawling,you need to pay attention to the limitation from google towards ip address and the warning of exception , so I suggest that you should pause running the program and own the Proxy ip
-
-python - [MagicGoogle](https://github.com/howie6879/MagicGoogle)
-
-### 2.How to Use?
-This project can be installed via composer by requiring the `howie6879/phpGoogle` package in `composer.json`:
-
-``` json
-{
-    "require": {
-        "howie6879/phpGoogle": "~1.0"
-    }
-}
-```
-
-If you have installed `phpGoogle` in your project, you can get google search results that you need.
-
-**Example**
-
-``` php
-# Add boostrap autoload file
+<?php
+/**
+ * Author: howie
+ * CreateTime: 24/06/2017 08:42
+ * Description: get a search result by using PhpGoogle
+ */
 
 require_once '../vendor/autoload.php';
+
 use \howie6879\PhpGoogle\MagicGoogle;
 
 # Or new MagicGoogle()
@@ -32,12 +15,15 @@ $magicGoogle = new MagicGoogle('http://127.0.0.1:8118');
 # The first page of results
 $data = $magicGoogle->search_page('python');
 
+sleep(3);
+
 # Get url
 $data = $magicGoogle->search_url('python');
 
 foreach ($data as $value) {
     var_dump($value);
 }
+
 
 /** Output
  * string(23) "https://www.python.org/"
@@ -54,7 +40,9 @@ foreach ($data as $value) {
  * string(28) "https://www.learnpython.org/"
  * string(44) "https://www.programiz.com/python-programming"
  */
- 
+
+sleep(3);
+
 # Get {'title','url','text'}
 $data = $magicGoogle->search('python', 'en', '1');
 
@@ -73,19 +61,3 @@ foreach ($data as $value) {
  * }
  */
 
-```
-
-You can see [sample.php](./examples/sample.php)
-
-**If  you need a big amount of querie but only having an ip address,I suggest  you can have a time lapse between 5s ~ 30s.**
-
-The reason that it always return empty might be as follows:
-
-```html
-<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
-<TITLE>302 Moved</TITLE></HEAD><BODY>
-<H1>302 Moved</H1>
-The document has moved
-<A HREF="https://ipv4.google.com/sorry/index?continue=https://www.google.me/s****">here</A>.
-</BODY></HTML>
-```

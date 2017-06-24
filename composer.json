@@ -1,0 +1,27 @@
+{
+  "name": "howie6879/PhpGoogle",
+  "type": "library",
+  "description": "Google search results crawler, get google search results that you need.",
+  "keywords": [
+    "google",
+    "google result",
+    "google search",
+    "crawler"
+  ],
+  "homepage": "https://github.com/howie6879/phpGoogle",
+  "authors": [
+    {
+      "name": "howie.hu",
+      "email": "howie6879@gmail.com",
+      "homepage": "https://github.com/howie6879"
+    }
+  ],
+  "require": {
+    "sunra/php-simple-html-dom-parser": "1.5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "howie6879\\PhpGoogle\\": "src"
+    }
+  }
+}
