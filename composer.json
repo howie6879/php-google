@@ -1,5 +1,5 @@
 {
-  "name": "howie6879/PhpGoogle",
+  "name": "howie6879/php-google",
   "type": "library",
   "description": "Google search results crawler, get google search results that you need.",
   "keywords": [
@@ -8,7 +8,7 @@
     "google search",
     "crawler"
   ],
-  "homepage": "https://github.com/howie6879/phpGoogle",
+  "homepage": "https://github.com/howie6879/php-google",
   "authors": [
     {
       "name": "howie.hu",

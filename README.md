@@ -1,4 +1,4 @@
-# phpGoogle
+# php-google
 This is an easy Google Seraching crawler that you can get anything you want in the page by using it.
 
 During the process of  crawling,you need to pay attention to the limitation from google towards ip address and the warning of exception , so I suggest that you should pause running the program and own the Proxy ip
@@ -6,17 +6,17 @@ During the process of  crawling,you need to pay attention to the limitation from
 python - [MagicGoogle](https://github.com/howie6879/MagicGoogle)
 
 ### 2.How to Use?
-This project can be installed via composer by requiring the `howie6879/phpGoogle` package in `composer.json`:
+This project can be installed via composer by requiring the `howie6879/php-google` package in `composer.json`:
 
 ``` json
 {
     "require": {
-        "howie6879/phpGoogle": "~1.0"
+        "howie6879/php-google": "~1.0"
     }
 }
 ```
 
-If you have installed `phpGoogle` in your project, you can get google search results that you need.
+If you have installed `php-google` in your project, you can get google search results that you need.
 
 **Example**
 
