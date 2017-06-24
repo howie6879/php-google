@@ -11,7 +11,7 @@ This project can be installed via composer by requiring the `howie6879/php-googl
 ``` json
 {
     "require": {
-        "howie6879/php-google": "~1.0"
+        "howie6879/php-google": "1.0"
     }
 }
 ```
